@@ -7,9 +7,7 @@ st.title('Reporte: Data ')
 
 @st.cache
 def load_data(nrows):
-    data  = pd.read_csv('./data/train.csv', nrows=nrows)
-    data  = pd.read_csv('./data/test', nrows=nrows)
-    
+    data  = pd.read_csv('./data/train.csv', nrows=nrows) 
     return data
 
 data_load_state = st.text('Loading data...')
